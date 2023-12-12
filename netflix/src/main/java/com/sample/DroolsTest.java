@@ -4,26 +4,31 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * This is a sample class to launch a rule.
  */
 public class DroolsTest {
     public static final class GUI{
-    	Scanner scanner = new Scanner(System.in);
         public String answer;
         public void insertQuestionAndSetAnswer(String question, String[] possible_answers, boolean gotMovie){
-            if (gotMovie == false){
-                System.out.println(question);
-                for (int i = 0; i < possible_answers.length; i++){
-                    System.out.println(i + ". " + possible_answers[i]);
+            if (!gotMovie){
+                int option = JOptionPane.showOptionDialog(null, question, "Select an answer", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, possible_answers, possible_answers[0]);
+                if (option >= 0) {
+                    answer = possible_answers[option];
                 }
-                System.out.println("Please enter the number of your answer:");
-                answer = scanner.nextLine();
-                System.out.println("Your answer is: " + answer);
             }
             else{
-                System.out.println("Your movie is: " + question);
+                JOptionPane.showMessageDialog(null, "Your movie is: " + question);
             }
         }
     }
