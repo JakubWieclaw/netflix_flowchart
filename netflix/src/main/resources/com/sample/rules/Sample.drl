@@ -106,3 +106,190 @@ rule "10"
 			String movie = "True Grit";
 			gui.insertQuestionAndSetAnswer(movie, null, true);
 end
+
+rule "11"
+		when
+			Question(question_content == "Horses, boots and 10-gallon hats?", answer == "No")
+		then
+			String question = "Do you want to keep it serious?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "12"
+		when
+			Question(question_content == "Do you want to keep it serious?", answer == "No")
+		then
+			String movie = "Top Gun";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "13"
+		when
+			Question(question_content == "Do you want to keep it serious?", answer == "Yes")
+		then
+			String question = "Set in the future or present day?";
+			String[] possible_answers = {"Future", "Now"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "14"
+		when
+			Question(question_content == "Set in the future or present day?", answer == "Future")
+		then
+			String movie = "Aeon Flux";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "15"
+		when
+			Question(question_content == "Set in the future or present day?", answer == "Now")
+		then
+			String movie = "Shooter";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "16"
+		when
+			Question(question_content == "What about a documentary?", answer == "Yes")
+		then
+			String question = "Do you consider snowboard films to be documentaries?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "17"
+		when
+			Question(question_content == "Do you consider snowboard films to be documentaries?", answer == "Yes")
+		then
+			String movie = "Art of Flight";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "18"
+		when
+			Question(question_content == "Do you consider snowboard films to be documentaries?", answer == "No")
+		then
+			String question = "Do you want to have your face melted off from maxiumum rock?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "19"
+		when
+			Question(question_content == "Do you want to have your face melted off from maxiumum rock?", answer == "Yes")
+		then
+			String movie = "Year of the Horse";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "20"
+		when
+			Question(question_content == "Do you want to have your face melted off from maxiumum rock?", answer == "No")
+		then
+			String question = "Take it to the streets?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "21"
+		when
+			Question(question_content == "Take it to the streets?", answer == "Yes")
+		then
+			String question = "Pain or Paint?";
+			String[] possible_answers = {"Pain", "Paint"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "22"
+		when
+			Question(question_content == "Pain or Paint?", answer == "Pain")
+		then
+			String movie = "Bones Brigade: An Autobiography";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "23"
+		when
+			Question(question_content == "Pain or Paint?", answer == "Paint")
+		then
+			String movie = "Exit Through the Gift Shop";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "24"
+		when
+			Question(question_content == "Take it to the streets?", answer == "No")
+		then
+			String question = "Do you want to see how ridiculous religion can be?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "25"
+		when
+			Question(question_content == "Do you want to see how ridiculous religion can be?", answer == "Yes")
+		then
+			String movie = "Religulous";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "26"
+		when
+			Question(question_content == "Do you want to see how ridiculous religion can be?", answer == "No")
+		then
+			String question = "Are you a Woody Allen fan? Or would you like to become one?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "27"
+		when
+			Question(question_content == "Are you a Woody Allen fan? Or would you like to become one?", answer == "Yes")
+		then
+			String movie = "Woody Allen: A Documentary";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "28"
+		when
+			Question(question_content == "Are you a Woody Allen fan? Or would you like to become one?", answer == "No")
+		then
+			String question = "Do subtitles bother you?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		    Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "29"
+		when
+			Question(question_content == "Do subtitles bother you?", answer == "Yes")
+		then
+			String movie = "Grizzly man";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
+
+rule "30"
+		when
+			Question(question_content == "Do subtitles bother you?", answer == "No")
+		then
+			String movie = "Man on Wire";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
