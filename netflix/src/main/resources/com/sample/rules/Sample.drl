@@ -532,3 +532,299 @@ rule "58"
 	then
 		String movie = "Clerks";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "59"
+	when
+		Question(question_content == "Are you in the mood to laugh?", answer == "No")
+	then
+		String question = "Do you hunger for adventure?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "60"
+	when
+		Question(question_content == "Do you hunger for adventure?", answer == "Yes")
+	then
+		String question = "Were you a fan of Firefly?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+	
+rule "61"
+	when
+		Question(question_content == "Were you a fan of Firefly?", answer == "Yes")
+	then
+		String movie = "Serenity";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "62"
+	when
+		Question(question_content == "Were you a fan of Firefly?", answer == "No")
+	then
+		String question = "Do you like main roles to be played by kids?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "63"
+	when
+		Question(question_content == "Do you like main roles to be played by kids?", answer == "Yes")
+	then
+		String question = "Want some thrills with your adventure?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "64"
+	when
+		Question(question_content == "Want some thrills with your adventure?", answer == "Yes")
+	then
+		String movie = "Super 8";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "65"
+	when
+		Question(question_content == "Want some thrills with your adventure?", answer == "No")
+	then
+		String movie = "The Hunger Games";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "66"
+	when
+		Question(question_content == "Do you like main roles to be played by kids?", answer == "No")
+	then
+		String movie = "Star Trek II: The Wrath of Khan";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "67"
+	when
+		Question(question_content == "Do you hunger for adventure?", answer == "No")
+	then
+		String question = "Care for some criminal intent?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "68"
+	when
+		Question(question_content == "Care for some criminal intent?", answer == "Yes")
+	then
+		String question = "Do you enjoy diatribes entirely unrelated to the plot?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "69"
+	when
+		Question(question_content == "Do you enjoy diatribes entirely unrelated to the plot?", answer == "Yes")
+	then
+		String movie = "Reservoir Dogs";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "70"
+	when
+		Question(question_content == "Do you enjoy diatribes entirely unrelated to the plot?", answer == "No")
+	then
+		String question = "Are you upser by seeing drug use?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "71"
+	when
+		Question(question_content == "Are you upser by seeing drug use?", answer == "Yes")
+	then
+		String question = "Mob story?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "72"
+	when
+		Question(question_content == "Mob story?", answer == "Yes")
+	then
+		String movie = "Miller's Crossing";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "73"
+	when
+		Question(question_content == "Mob story?", answer == "No")
+	then
+		String movie = "Clay Pigeons";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "74"
+	when
+		Question(question_content == "Are you upser by seeing drug use?", answer == "No")
+	then
+		String question = "Do you love hip hop?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "75"
+	when
+		Question(question_content == "Do you love hip hop?", answer == "Yes")
+	then
+		String movie = "Hustle & Flow";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "76"
+	when
+		Question(question_content == "Do you love hip hop?", answer == "No")
+	then
+		String movie = "Traffic";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "77"
+	when
+		Question(question_content == "Care for some criminal intent?", answer == "No")
+	then
+		String question = "Ready for some romance?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "78"
+	when
+		Question(question_content == "Ready for some romance?", answer == "Yes")
+	then
+		String question = "Tom Cruise of Matt Damon?";
+		String[] possible_answers = {"Tom", "Matt"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "79"
+	when
+		Question(question_content == "Tom Cruise of Matt Damon?", answer == "Tom")
+	then
+		String movie = "Vanilla Sky";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "80"
+	when
+		Question(question_content == "Tom Cruise of Matt Damon?", answer == "Matt")
+	then
+		String movie = "Good Will Hunting";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "81"
+	when
+		Question(question_content == "Ready for some romance?", answer == "No")
+	then
+		String question = "Hypothetically: would a long brutal rape scene ruin your night?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "82"
+	when
+		Question(question_content == "Hypothetically: would a long brutal rape scene ruin your night?", answer == "Yes")
+	then
+		String question = "Do you want to be completely confused?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+	
+rule "83"
+	when
+		Question(question_content == "Do you want to be completely confused?", answer == "Yes")
+	then
+		String movie = "Pi";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "84"
+	when
+		Question(question_content == "Do you want to be completely confused?", answer == "No")
+	then
+		String question = "Are sutitles going to be a problem?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "85"
+	when
+		Question(question_content == "Are sutitles going to be a problem?", answer == "Yes")
+	then
+		String question = "Keep it mellow?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "86"
+	when
+		Question(question_content == "Keep it mellow?", answer == "Yes")
+	then
+		String movie = "Midnight Cowboy";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "87"
+	when
+		Question(question_content == "Keep it mellow?", answer == "No")
+	then
+		String movie = "The Machinist";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "88"
+	when
+		Question(question_content == "Are sutitles going to be a problem?", answer == "No")
+	then
+		String movie = "Tomboy";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+		
+rule "89"
+	when
+		Question(question_content == "Hypothetically: would a long brutal rape scene ruin your night?", answer == "No")
+	then
+		String question = "Have you seen the original Girl with the Dragon Tattoo?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "90"
+	when
+		Question(question_content == "Have you seen the original Girl with the Dragon Tattoo?", answer == "Yes")
+	then
+		String question = "Have you seen The Girl Who Played with Fire?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "91"
+	when
+		Question(question_content == "Have you seen The Girl Who Played with Fire?", answer == "Yes")
+	then
+		String movie = "The Girl who Kicked the Hornet's Nest";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "92"
+	when
+		Question(question_content == "Have you seen The Girl Who Played with Fire?", answer == "No")
+	then
+		String movie = "The Girl who Played with Fire";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "93"
+	when
+		Question(question_content == "Have you seen the orginal Girl with the Dragon Tatoo?", answer == "No")
+	then
+		String movie = "The Girl with the Dragon Tatoo";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
