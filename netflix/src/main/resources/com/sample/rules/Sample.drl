@@ -293,3 +293,242 @@ rule "30"
 			String movie = "Man on Wire";
 			gui.insertQuestionAndSetAnswer(movie, null, true);
 end
+
+rule "31"
+		when
+			Question(question_content == "What about documentary?", answer == "No")
+		then
+			String question = "Monsters, murderers and madness?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+			Question q = new Question(question, gui.answer);
+			insert(q);
+end
+
+rule "32"
+		when
+			Question(question_content == "Monsters, murderers and madness?", answer == "Yes")
+		then
+			String question = "Should there be a blood saoked chainsaw at some point?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+			Question q = new Question(question, gui.answer);
+			insert(q);
+
+rule "33"
+	when
+			Question(question_content == "Should there be a blood saoked chainsaw at some point?", answer == "Yes")
+		then
+			String movie = "The Evil dead";
+			gui.insertQuestionAndSetAnswer(movie, null, true);
+		
+rule "34"
+	when
+		Question(question_content == "Should there be a blood saoked chainsaw at some point?", answer == "No")
+	then
+		String question = "Three parts classic horror, one part something new?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "35"
+	when
+		Question(question_content == "Three parts classic horror, one part something new?", answer == "Yes")
+	then
+		String movie = "Cabin in the woods";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "36"
+	when
+		Question(question_content == "Three parts classic horror, one part something new?", answer == "No")
+	then
+		String question = "Do abandoned asylums scare the sense out of you?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "37"
+	when
+		Question(question_content == "Do abandoned asylums scare the sense out of you?", answer == "Yes")
+	then
+		String movie = "Session 9";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+	
+rule "38"
+	when
+		Question(question_content == "Do abandoned asylums scare the sense out of you?", answer == "No")
+	then
+		String movie = "Insidious";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "39"
+		when
+			Question(question_content == "Monsters, murderers and madness?", answer == "No")
+		then
+			String question = "Are you in the mood to laugh?";
+			String[] possible_answers = {"Yes", "No"};
+			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+			Question q = new Question(question, gui.answer);
+			insert(q);
+
+rule "40"
+	when
+		Question(question_content == "Are you in the mood to laugh?", answer == "Yes")
+	then
+		String question = "Do you want some drama with your laughter?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "41"
+	when
+		Question(question_content == "Do you want some drama with your laughter?", answer == "No")
+	then
+		String question = "Do you mind it when people break out singing?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "42"
+	when
+		Question(question_content == "Do you mind it when people break out singing?", answer == "Yes")
+	then
+		String movie = "Happy Gilmore";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "43"
+	when
+		Question(question_content == "Do you mind it when people break out singing?", answer == "No")
+	then
+		String question = "Do you find clever worldplay entertaining?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "44"
+	when
+		Question(question_content == "Do you find clever worldplay entertaining?", answer == "Yes")
+	then
+		String movie = "Duck Soup";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "45"
+	when
+		Question(question_content == "Do you find clever worldplay entertaining?", answer == "No")
+	then
+		String movie = "Ferris Bueller's Day Off";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "46"
+	when
+		Question(question_content == "Do you want some drama with your laughter?", answer == "Yes")
+	then
+		String question = "Are you adverse to black and white?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "47"
+	when
+		Question(question_content == "Are you adverse to black and white?", answer == "Yes")
+	then
+		String question = "Do you love Paul Newman? Do you want to?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "48"
+	when
+		Question(question_content == "Do you love Paul Newman? Do you want to?", answer == "Yes")
+	then
+		String question = "Do you want to watch something great or legendary?";
+		String[] possible_answers = {"Legend", "Great"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "49"
+	when
+		Question(question_content == "Do you want to watch something great or legendary?", answer == "Legend")
+	then
+		String movie = "Butch Cassidy and the Sundance Kid";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "50"
+	when
+		Question(question_content == "Do you want to watch something great or legendary?", answer == "Great")
+	then
+		String movie = "Slap Shot";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "51"
+	when
+		Question(question_content == "Do you love Paul Newman? Do you want to?", answer == "No")
+	then
+		String question = "Gritty or pretty?";
+		String[] possible_answers = {"Gritty", "Pretty"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "52"
+	when
+		Question(question_content == "Gritty or pretty?", answer == "Gritty")
+	then
+		String movie = "Transpotting";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "53"
+	when
+		Question(question_content == "Gritty or pretty?", answer == "Pretty")
+	then
+		String question = "Slow-paces quirky romantic indie?";
+		String[] possible_answers = {"Yes", "No"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "54"
+	when
+		Question(question_content == "Slow-paces quirky romantic indie?", answer == "Yes")
+	then
+		String movie = "Lost in Translation";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "55"
+	when
+		Question(question_content == "Slow-paces quirky romantic indie?", answer == "No")
+	then
+		String movie = "Big Fish";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "56"
+	when
+		Question(question_content == "Are you adverse to black and white?", answer == "No")
+	then
+		String question = "Do you like your humor to e less or more lewd?";
+		String[] possible_answers = {"Less", "More"};
+		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
+		Question q = new Question(question, gui.answer);
+		insert(q);
+
+rule "57"
+	when
+		Question(question_content == "Do you like your humor to e less or more lewd?", answer == "Less")
+	then
+		String movie = "ManHattan";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
+
+rule "58"
+	when
+		Question(question_content == "Do you like your humor to e less or more lewd?", answer == "More")
+	then
+		String movie = "Clerks";
+		gui.insertQuestionAndSetAnswer(movie, null, true);
