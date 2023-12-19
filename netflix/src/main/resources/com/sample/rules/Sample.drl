@@ -314,6 +314,8 @@ rule "32"
 			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
 			Question q = new Question(question, gui.answer);
 			insert(q);
+end
+		
 
 rule "33"
 	when
@@ -321,6 +323,7 @@ rule "33"
 		then
 			String movie = "The Evil dead";
 			gui.insertQuestionAndSetAnswer(movie, null, true);
+end
 		
 rule "34"
 	when
@@ -331,6 +334,7 @@ rule "34"
 		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
 		Question q = new Question(question, gui.answer);
 		insert(q);
+end
 
 rule "35"
 	when
@@ -338,6 +342,7 @@ rule "35"
 	then
 		String movie = "Cabin in the woods";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
+end
 
 rule "36"
 	when
@@ -348,6 +353,7 @@ rule "36"
 		gui.insertQuestionAndSetAnswer(question, possible_answers, false);
 		Question q = new Question(question, gui.answer);
 		insert(q);
+end
 
 rule "37"
 	when
@@ -355,6 +361,7 @@ rule "37"
 	then
 		String movie = "Session 9";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
+end
 	
 rule "38"
 	when
@@ -362,6 +369,7 @@ rule "38"
 	then
 		String movie = "Insidious";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
+end
 
 rule "39"
 		when
@@ -372,6 +380,7 @@ rule "39"
 			gui.insertQuestionAndSetAnswer(question, possible_answers, false);
 			Question q = new Question(question, gui.answer);
 			insert(q);
+end
 
 rule "40"
 	when
@@ -383,6 +392,7 @@ rule "40"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "41"
 	when
 		Question(question_content == "Do you want some drama with your laughter?", answer == "No")
@@ -393,6 +403,7 @@ rule "41"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "42"
 	when
 		Question(question_content == "Do you mind it when people break out singing?", answer == "Yes")
@@ -400,6 +411,7 @@ rule "42"
 		String movie = "Happy Gilmore";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "43"
 	when
 		Question(question_content == "Do you mind it when people break out singing?", answer == "No")
@@ -410,6 +422,7 @@ rule "43"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "44"
 	when
 		Question(question_content == "Do you find clever worldplay entertaining?", answer == "Yes")
@@ -417,6 +430,7 @@ rule "44"
 		String movie = "Duck Soup";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "45"
 	when
 		Question(question_content == "Do you find clever worldplay entertaining?", answer == "No")
@@ -424,6 +438,7 @@ rule "45"
 		String movie = "Ferris Bueller's Day Off";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "46"
 	when
 		Question(question_content == "Do you want some drama with your laughter?", answer == "Yes")
@@ -434,6 +449,7 @@ rule "46"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "47"
 	when
 		Question(question_content == "Are you adverse to black and white?", answer == "Yes")
@@ -444,6 +460,7 @@ rule "47"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "48"
 	when
 		Question(question_content == "Do you love Paul Newman? Do you want to?", answer == "Yes")
@@ -454,6 +471,7 @@ rule "48"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "49"
 	when
 		Question(question_content == "Do you want to watch something great or legendary?", answer == "Legend")
@@ -461,6 +479,7 @@ rule "49"
 		String movie = "Butch Cassidy and the Sundance Kid";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "50"
 	when
 		Question(question_content == "Do you want to watch something great or legendary?", answer == "Great")
@@ -468,6 +487,7 @@ rule "50"
 		String movie = "Slap Shot";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "51"
 	when
 		Question(question_content == "Do you love Paul Newman? Do you want to?", answer == "No")
@@ -478,6 +498,7 @@ rule "51"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "52"
 	when
 		Question(question_content == "Gritty or pretty?", answer == "Gritty")
@@ -485,6 +506,7 @@ rule "52"
 		String movie = "Transpotting";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "53"
 	when
 		Question(question_content == "Gritty or pretty?", answer == "Pretty")
@@ -495,6 +517,7 @@ rule "53"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "54"
 	when
 		Question(question_content == "Slow-paces quirky romantic indie?", answer == "Yes")
@@ -502,6 +525,7 @@ rule "54"
 		String movie = "Lost in Translation";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "55"
 	when
 		Question(question_content == "Slow-paces quirky romantic indie?", answer == "No")
@@ -509,6 +533,7 @@ rule "55"
 		String movie = "Big Fish";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "56"
 	when
 		Question(question_content == "Are you adverse to black and white?", answer == "No")
@@ -519,6 +544,7 @@ rule "56"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "57"
 	when
 		Question(question_content == "Do you like your humor to e less or more lewd?", answer == "Less")
@@ -526,6 +552,7 @@ rule "57"
 		String movie = "ManHattan";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "58"
 	when
 		Question(question_content == "Do you like your humor to e less or more lewd?", answer == "More")
@@ -533,6 +560,7 @@ rule "58"
 		String movie = "Clerks";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "59"
 	when
 		Question(question_content == "Are you in the mood to laugh?", answer == "No")
@@ -543,6 +571,7 @@ rule "59"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "60"
 	when
 		Question(question_content == "Do you hunger for adventure?", answer == "Yes")
@@ -553,6 +582,7 @@ rule "60"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 	
+end
 rule "61"
 	when
 		Question(question_content == "Were you a fan of Firefly?", answer == "Yes")
@@ -560,6 +590,7 @@ rule "61"
 		String movie = "Serenity";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "62"
 	when
 		Question(question_content == "Were you a fan of Firefly?", answer == "No")
@@ -570,6 +601,7 @@ rule "62"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "63"
 	when
 		Question(question_content == "Do you like main roles to be played by kids?", answer == "Yes")
@@ -580,6 +612,7 @@ rule "63"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "64"
 	when
 		Question(question_content == "Want some thrills with your adventure?", answer == "Yes")
@@ -587,6 +620,7 @@ rule "64"
 		String movie = "Super 8";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "65"
 	when
 		Question(question_content == "Want some thrills with your adventure?", answer == "No")
@@ -594,6 +628,7 @@ rule "65"
 		String movie = "The Hunger Games";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "66"
 	when
 		Question(question_content == "Do you like main roles to be played by kids?", answer == "No")
@@ -601,6 +636,7 @@ rule "66"
 		String movie = "Star Trek II: The Wrath of Khan";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "67"
 	when
 		Question(question_content == "Do you hunger for adventure?", answer == "No")
@@ -611,6 +647,7 @@ rule "67"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "68"
 	when
 		Question(question_content == "Care for some criminal intent?", answer == "Yes")
@@ -621,6 +658,7 @@ rule "68"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "69"
 	when
 		Question(question_content == "Do you enjoy diatribes entirely unrelated to the plot?", answer == "Yes")
@@ -628,6 +666,7 @@ rule "69"
 		String movie = "Reservoir Dogs";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "70"
 	when
 		Question(question_content == "Do you enjoy diatribes entirely unrelated to the plot?", answer == "No")
@@ -638,6 +677,7 @@ rule "70"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "71"
 	when
 		Question(question_content == "Are you upser by seeing drug use?", answer == "Yes")
@@ -648,6 +688,7 @@ rule "71"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "72"
 	when
 		Question(question_content == "Mob story?", answer == "Yes")
@@ -655,6 +696,7 @@ rule "72"
 		String movie = "Miller's Crossing";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "73"
 	when
 		Question(question_content == "Mob story?", answer == "No")
@@ -662,6 +704,7 @@ rule "73"
 		String movie = "Clay Pigeons";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "74"
 	when
 		Question(question_content == "Are you upser by seeing drug use?", answer == "No")
@@ -672,6 +715,7 @@ rule "74"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "75"
 	when
 		Question(question_content == "Do you love hip hop?", answer == "Yes")
@@ -679,6 +723,7 @@ rule "75"
 		String movie = "Hustle & Flow";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "76"
 	when
 		Question(question_content == "Do you love hip hop?", answer == "No")
@@ -686,6 +731,7 @@ rule "76"
 		String movie = "Traffic";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "77"
 	when
 		Question(question_content == "Care for some criminal intent?", answer == "No")
@@ -696,6 +742,7 @@ rule "77"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "78"
 	when
 		Question(question_content == "Ready for some romance?", answer == "Yes")
@@ -706,6 +753,7 @@ rule "78"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "79"
 	when
 		Question(question_content == "Tom Cruise of Matt Damon?", answer == "Tom")
@@ -713,6 +761,7 @@ rule "79"
 		String movie = "Vanilla Sky";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "80"
 	when
 		Question(question_content == "Tom Cruise of Matt Damon?", answer == "Matt")
@@ -720,6 +769,7 @@ rule "80"
 		String movie = "Good Will Hunting";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "81"
 	when
 		Question(question_content == "Ready for some romance?", answer == "No")
@@ -730,6 +780,7 @@ rule "81"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "82"
 	when
 		Question(question_content == "Hypothetically: would a long brutal rape scene ruin your night?", answer == "Yes")
@@ -740,6 +791,7 @@ rule "82"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 	
+end
 rule "83"
 	when
 		Question(question_content == "Do you want to be completely confused?", answer == "Yes")
@@ -747,6 +799,7 @@ rule "83"
 		String movie = "Pi";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "84"
 	when
 		Question(question_content == "Do you want to be completely confused?", answer == "No")
@@ -757,6 +810,7 @@ rule "84"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "85"
 	when
 		Question(question_content == "Are sutitles going to be a problem?", answer == "Yes")
@@ -767,6 +821,7 @@ rule "85"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "86"
 	when
 		Question(question_content == "Keep it mellow?", answer == "Yes")
@@ -774,6 +829,7 @@ rule "86"
 		String movie = "Midnight Cowboy";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "87"
 	when
 		Question(question_content == "Keep it mellow?", answer == "No")
@@ -781,6 +837,7 @@ rule "87"
 		String movie = "The Machinist";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "88"
 	when
 		Question(question_content == "Are sutitles going to be a problem?", answer == "No")
@@ -788,6 +845,7 @@ rule "88"
 		String movie = "Tomboy";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 		
+end
 rule "89"
 	when
 		Question(question_content == "Hypothetically: would a long brutal rape scene ruin your night?", answer == "No")
@@ -798,6 +856,7 @@ rule "89"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "90"
 	when
 		Question(question_content == "Have you seen the original Girl with the Dragon Tattoo?", answer == "Yes")
@@ -808,6 +867,7 @@ rule "90"
 		Question q = new Question(question, gui.answer);
 		insert(q);
 
+end
 rule "91"
 	when
 		Question(question_content == "Have you seen The Girl Who Played with Fire?", answer == "Yes")
@@ -815,6 +875,7 @@ rule "91"
 		String movie = "The Girl who Kicked the Hornet's Nest";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "92"
 	when
 		Question(question_content == "Have you seen The Girl Who Played with Fire?", answer == "No")
@@ -822,6 +883,7 @@ rule "92"
 		String movie = "The Girl who Played with Fire";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
 
+end
 rule "93"
 	when
 		Question(question_content == "Have you seen the orginal Girl with the Dragon Tatoo?", answer == "No")
