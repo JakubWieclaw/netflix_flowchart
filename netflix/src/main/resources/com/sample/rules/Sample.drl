@@ -890,3 +890,4 @@ rule "93"
 	then
 		String movie = "The Girl with the Dragon Tatoo";
 		gui.insertQuestionAndSetAnswer(movie, null, true);
+end
