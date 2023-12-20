@@ -296,7 +296,7 @@ end
 
 rule "31"
 		when
-			Question(question_content == "What about documentary?", answer == "No")
+			Question(question_content == "What about a documentary?", answer == "No")
 		then
 			String question = "Monsters, murderers and madness?";
 			String[] possible_answers = {"Yes", "No"};
