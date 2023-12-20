@@ -8,6 +8,9 @@ W razie problemów z uruchomieniem możliwe jest utworzenie domyślnego projektu
   * netflix\src\main\resources\com\sample\rules\Sample.drl
 
 Projekt SI
+
 L11 pt. 13:30
+
 Bartosz Żelek 151860
+
 Jakub Więcław 151765
